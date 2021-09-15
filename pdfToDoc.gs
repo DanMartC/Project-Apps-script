@@ -8,14 +8,13 @@
  */
 function getInformationPDF() {
   /** Primera sección.
-   * 
-   * Variables:
-   *  - spsArch   := Conectarse con la Hoja 'Arch'
-   *  - dataArch  := Obtener los datos de la hoja
-   *  - lastRowA  := Obtiene la última fila 
-   *  - files     := Obtiene los archivos que se encuentrán en la carpeta
-   *  - fileID    := Insertaremos en la lista los Id's de los archivos
-   *  - fileName  := Insertaremos en la lista los Nombres de los archivos
+   *  Variables:
+   *    - spsArch   := Conectarse con la Hoja 'Arch'
+   *    - dataArch  := Obtener los datos de la hoja
+   *    - lastRowA  := Obtiene la última fila 
+   *    - files     := Obtiene los archivos que se encuentrán en la carpeta
+   *    - fileID    := Insertaremos en la lista los Id's de los archivos
+   *    - fileName  := Insertaremos en la lista los Nombres de los archivos
    */
   const spsArch = SpreadsheetApp.openById('id').getSheetByName('Arch')
   var dataArch = spsArch.getDataRange().getValues();
